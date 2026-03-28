@@ -1,3 +1,3 @@
 <?php 
-echo "plese yes";
+echo "prity plese yes";
 phpinfo(); ?>
