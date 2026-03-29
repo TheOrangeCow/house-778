@@ -1,0 +1,174 @@
+body{
+    display: flex;
+    visibility: hidden;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.carouseldiv {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+.carouseldiv.active {
+    display: block;
+}
+.carousel button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+button:hover {
+    background: #555;
+}
+.carousel button:first-child {
+    left: 0;
+}
+.carousel button:last-child {
+    right: 0;
+}
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    visibility: hidden; 
+    margin-bottom: 40px;
+}
+
+.section.visible {
+    visibility: visible; 
+    animation: flyIn 1s ease forwards;
+}
+
+.img {
+    width: 20%;
+    height: auto;
+    max-width: 300px; 
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.imgsmall {
+    width: 10%;
+    height: auto;
+    max-width: 300px; 
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+
+.text {
+    overflow: hidden;
+    display: inline-block;
+    width: 65%; 
+}
+
+@media (max-width: 768px) {
+    .img {
+        display: none; 
+    }
+    .imgsmall{
+        display: none;
+    }
+    .text {
+        margin-left: 0; 
+    }
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navb {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.navb:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+
+
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            margin: 20px auto;
+            max-width: 320px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .cell.clicked {
+            pointer-events: none;
+        }
+        .status {
+            margin: 20px;
+            font-size: 1.5rem;
+        }
+
+
+

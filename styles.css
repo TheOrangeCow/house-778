@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff00cc, #00ffcc, #cc00ff, #ff00cc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selector {
+    margin-bottom: 20px;
+}
+
+#question-container, #answer-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.bubble, .answer {
+    position: absolute;
+    background-color: #3498db;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.answer {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.upgrade-button {
+    background-color: #FFA500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.upgrade-button:hover {
+    background-color: #ff8c00;
+    transform: translateX(-50%) scale(1.05);
+}

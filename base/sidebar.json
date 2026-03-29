@@ -1,0 +1,39 @@
+{
+    "outside": [
+        {"title": "Home", "url": "https://house-778.org/"}
+    ],
+    "sections": [
+        {   
+            "section": "Account",
+            "items": [
+                {"title": "Profile", "url": "https://profile.house-778.org/"},
+                {"title": "Theme", "url": "https://theme.house-778.org/"},
+                {"title": "Account", "url": "https://auth.house-778.org/account"}
+                
+            ]
+        },
+        {
+            "section": "Projects",
+            "items": [
+                {"title": "Chat", "url": "https://chat.house-778.org/"},
+                {"title": "Casino", "url": "https://house-778.org/Casino"},
+                {"title": "Wordle", "url": "https://wordle.house-778.org/"},
+                {"title": "W4 schools", "url": "https://w4-schools.house-778.org/"},
+                {"title": "BlufferBall", "url": "https://bluffball.house-778.org/"},
+                {"title": "House stack", "url": "https://house-stack.house-778.org/"},
+                {"title": "Blooket hacks", "url": "https://blooket.house-778.org/"},
+                {"title": "Cheese - Shop", "url": "https://theorangecow.github.io/cheese/"},
+                {"title": "Python projects", "url": "https://python.house-778.org/"}
+            ]
+        },
+        {
+            "section": "Bottom",
+            "items": [
+                {"title": "Casino", "url": "https://house-778.org/Casino"},
+                {"title": "Wordle", "url": "https://wordle.house-778.org/"},
+                {"title": "BlufferBall", "url": "https://bluffball.house-778.org/"},
+                {"title": "Terms and conditions", "url": "https://house-778.org/tandc.php"}
+            ]
+        }
+    ]
+}
