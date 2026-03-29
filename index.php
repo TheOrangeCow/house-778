@@ -1,4 +1,4 @@
 <?php
-    header("Location: https://house-778.org/home.php");
+    header("Location: https://house-778.theorangecow.org/home.php");
     exit;
 ?>
