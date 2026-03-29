@@ -4,4 +4,7 @@ if (stripos($_SESSION['username'], 'player') !== false || stripos($_SESSION['use
     echo "You must have a house account to use this feature";
     header("Location: https://error.house-778.org/418.php");
     exit;
+
+
+    // fix location
 }

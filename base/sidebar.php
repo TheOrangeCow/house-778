@@ -1,5 +1,5 @@
 <?php
-$jsonString = file_get_contents('https://house-778.org/base/sidebar.json');
+$jsonString = file_get_contents('https://house-778.theorangecow.org/base/sidebar.json');
 $data = json_decode($jsonString, true);
 ?>
 
@@ -23,7 +23,6 @@ $data = json_decode($jsonString, true);
 
                 <div id="section-<?php echo $index; ?>" class="side-nav-content" style="<?php echo $section['section'] == "Bottom" ? 'display: block;' : 'display: none;'; ?>">
                     <?php if($section['section'] == "Bottom"):?>
-                        <!-- join code used to be here  -->
                     <?php endif; ?>
                     <?php foreach ($section['items'] as $item): ?>
                         <a href="<?php echo htmlspecialchars($item['url']); ?>">
