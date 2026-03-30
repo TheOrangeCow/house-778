@@ -92,7 +92,7 @@ include "base/main.php";
                 if (isset($_SESSION['username']) && stripos($_SESSION['username'], 'Guest') !== false) {
                     echo "<p style='color: red;'>Some projects require you to sign in.</p><a href='https://auth.house-778.theorangecow.org'>Sign in</a>";
                 } else {
-                    echo "<a href='https://auth.house-778.org/logout.php'>Logout</a>"; 
+                    echo "<a href='https://auth.house-778.theorangecow.org/logout.php'>Logout</a>"; 
                 }
                 ?>
             </div>
