@@ -99,7 +99,7 @@ include "base/main.php";
         
             <div class="section" id="p2">
                 <h2>About</h2>
-                <p>Hi, I am TheOrangeCow. This website is where i hoset my php projects. 
+                <p>Hi, I am TheOrangeCow. This website is where i host my php projects. 
                 <a href="https://github.com/TheOrangeCow">My GitHub account</a></p>
         
                 <h3>Tic-Tac-Toe with Unbeatable AI</h3>
