@@ -101,7 +101,7 @@ body {
 }
 
 .desc {
-    color: #94a3b8;
+    color: #c7a75c;
     margin-bottom: 30px;
 }
 
