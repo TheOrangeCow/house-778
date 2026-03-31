@@ -28,7 +28,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Segoe UI', sans-serif;
-    background: #020617;
+    background: #000000;
     color: white;
 }
 
@@ -66,13 +66,13 @@ body {
 
 .glitch::before {
     animation: glitchTop 1s infinite;
-    color: #0ff;
+    color: rgb(255, 136, 0);
     clip-path: inset(0 0 50% 0);
 }
 
 .glitch::after {
     animation: glitchBottom 1s infinite;
-    color: #f0f;
+    color: rgb(55, 0, 255);
     clip-path: inset(50% 0 0 0);
 }
 
@@ -108,7 +108,7 @@ body {
 .btn {
     padding: 12px 25px;
     border-radius: 8px;
-    background: linear-gradient(45deg, #6366f1, #0ea5e9);
+    background: #0ea5e9;
     color: white;
     text-decoration: none;
     transition: 0.3s;
@@ -130,7 +130,6 @@ body {
     </div>
     <div class="message"><?php echo $message; ?></div>
     <div class="desc">Ops, something broke...</div>
-    <a href="/" class="btn">Go Home</a>
     <a href="<?php echo $redirect ?: '/'; ?>" class="btn">Go Home</a>
 </div>
 
@@ -163,7 +162,7 @@ function animate() {
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        ctx.fillStyle = "#38bdf8";
+        ctx.fillStyle = "#f8bb38";
         ctx.fillRect(p.x, p.y, p.size, p.size);
     });
 
