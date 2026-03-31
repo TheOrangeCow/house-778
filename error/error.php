@@ -66,13 +66,13 @@ body {
 
 .glitch::before {
     animation: glitchTop 1s infinite;
-    color: rgb(255, 136, 0);
+    color: orange;
     clip-path: inset(0 0 50% 0);
 }
 
 .glitch::after {
     animation: glitchBottom 1s infinite;
-    color: rgb(55, 0, 255);
+    color: b35c00;
     clip-path: inset(50% 0 0 0);
 }
 
@@ -108,7 +108,7 @@ body {
 .btn {
     padding: 12px 25px;
     border-radius: 8px;
-    background: #0ea5e9;
+    background: #803f00;
     color: white;
     text-decoration: none;
     transition: 0.3s;
@@ -162,7 +162,7 @@ function animate() {
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        ctx.fillStyle = "#f8bb38";
+        ctx.fillStyle = "#b35c00";
         ctx.fillRect(p.x, p.y, p.size, p.size);
     });
 
