@@ -21,7 +21,7 @@ http_response_code($code);
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="https://house-778.theorangecow.org/icon.ico" type="image/x-icon">
+<link rel="icon" href="https://house-778.theorangecow.org/error/icon.ico" type="image/x-icon">
 <title>Error <?php echo $code; ?></title>
 
 <style>
