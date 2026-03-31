@@ -1,5 +1,6 @@
 <?php
 $code = isset($_GET['code']) ? intval($_GET['code']) : 500;
+$redirect = isset($_GET['redirect']) ? $_GET['redirect'] : null;
 
 $messages = [
     400 => "Bad Request",
@@ -130,6 +131,7 @@ body {
     <div class="message"><?php echo $message; ?></div>
     <div class="desc">Ops, something broke...</div>
     <a href="/" class="btn">Go Home</a>
+    <a href="<?php echo $redirect ?: '/'; ?>" class="btn">Go Home</a>
 </div>
 
 <script>
