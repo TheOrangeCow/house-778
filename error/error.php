@@ -53,7 +53,7 @@ body {
     font-size: 120px;
     font-weight: bold;
     position: relative;
-    color: #c7a762;
+    color: #803f00;
     animation: glitch 1s infinite;
 }
 
