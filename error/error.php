@@ -1,5 +1,5 @@
 <?php
-$code = isset($_SERVER['REDIRECT_STATUS']) ? intval($_SERVER['REDIRECT_STATUS']) : 500;
+$code = isset($_GET['code']) ? intval($_GET['code']) : 500;
 
 $messages = [
     400 => "Bad Request",
