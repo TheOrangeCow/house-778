@@ -72,7 +72,7 @@ body {
 
 .glitch::after {
     animation: glitchBottom 1s infinite;
-    color: #b35c00;
+    color: orange; /*#b35c00;*/
     clip-path: inset(50% 0 0 0);
 }
 
