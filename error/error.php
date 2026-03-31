@@ -72,7 +72,7 @@ body {
 
 .glitch::after {
     animation: glitchBottom 1s infinite;
-    color: b35c00;
+    color: #b35c00;
     clip-path: inset(50% 0 0 0);
 }
 
@@ -162,7 +162,7 @@ function animate() {
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        ctx.fillStyle = "#b35c00";
+        ctx.fillStyle = "#803f00";
         ctx.fillRect(p.x, p.y, p.size, p.size);
     });
 
