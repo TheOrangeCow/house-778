@@ -60,7 +60,7 @@ include "base/main.php";
                 display: block;
                 text-decoration: none;
                 color: inherit;
-                opacity: 1;
+                opacity: 0;
             }
             
             .card:hover {
@@ -195,17 +195,17 @@ include "base/main.php";
                 let index = 1;
                 function showNext() {
                     if (index <= 13) {
-                        if (welcome) {
+                        //if (welcome) {
                             var welcome = document.getElementById("p" + index.toString());
                             if (welcome.classList.contains('card')) {
-                                welcome.style.opacity = "0";
+                                welcome.style.opacity = "1";
                             }
                             
                             welcome.classList.add('visible');
 
                             index++;
                             setTimeout(showNext, 500);
-                        }
+                        //}
                     }
                 }
                 showNext();
