@@ -9,7 +9,7 @@ $messages = [
     404 => "Page Not Found",
     500 => "Internal Server Error",
     503 => "Service Unavailable",
-    418 => "You need a house account or i am a tea pot."
+    418 => "You need a house account or I'm a teapot."
 ];
 
 $message = $messages[$code] ?? "Something went wrong";
