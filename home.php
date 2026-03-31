@@ -129,54 +129,67 @@ include "base/main.php";
             </div>
         
             <div class="grid">
-                <a href="https://bluffball.house-778.theorangecow.org" class="card" id="p4">
+                <a href="https://profile.house-778.theorangecow.org" class="card" id="p4">
+                    <div class="card-title">Profile</div>
+                    <div class="card-desc">A site were you can conetct with other house users.</div>
+                </a>
+                <a href="https://theme.house-778.theorangecow.org" class="card" id="p5">
+                    <div class="card-title">Theme</div>
+                    <div class="card-desc">A site were you can change your background.</div>
+                </a>
+                <a href="https://auth.house-778.theorangecow.org/account/" class="card" id="p6">
+                    <div class="card-title">Account</div>
+                    <div class="card-desc">A site were you can change your account settings.</div>
+                </a>
+                <br>
+                <a href="https://bluffball.house-778.theorangecow.org" class="card" id="p7">
                     <div class="card-title">Bluffball</div>
                     <div class="card-desc">A site made for nerds needing the latest football data, with tools to link it into conversations.</div>
                 </a>
         
-                <a href="https://w4-schools.house-778.theorangecow.org" class="card" id="p5">
+                <a href="https://w4-schools.house-778.theorangecow.org" class="card" id="p8">
                     <div class="card-title">W4 Schools</div>
                     <div class="card-desc">A rip-off of W3Schools with an extensive list of tutorials (3). 
                     <?php if(isset($_SESSION['username']) && stripos($_SESSION['username'],'Guest') !== false){echo "(You need a House account to use this feature.)";} ?>
                     </div>
                 </a>
         
-                <a href="https://house-stack.house-778.theorangecow.org" class="card" id="p6">
+                <a href="https://house-stack.house-778.theorangecow.org" class="card" id="p9">
                     <div class="card-title">House Stack</div>
                     <div class="card-desc">A rip-off of Stack Overflow. Extensive list of users (0). 
                     <?php if(isset($_SESSION['username']) && stripos($_SESSION['username'],'Guest') !== false){echo "(You need a House account to use this feature.)";} ?>
                     </div>
                 </a>
         
-                <a href="https://wordle.house-778.theorangecow.org" class="card" id="p7">
+                <a href="https://wordle.house-778.theorangecow.org" class="card" id="p10">
                     <div class="card-title">Wordle</div>
                     <div class="card-desc">Shows Wordle answers for yesterday, today, and tomorrow. 
                     <?php if(isset($_SESSION['username']) && stripos($_SESSION['username'],'Guest') !== false){echo "(You need a House account to use this feature.)";} ?>
                     </div>
                 </a>
         
-                <a href="https://library.house-778.theorangecow.org/" class="card" id="p8">
+                <a href="https://library.house-778.theorangecow.org/" class="card" id="p11">
                     <div class="card-title">Library</div>
                     <div class="card-desc">Play blackjack and pooheads with friends, without money. 
                     <?php if(isset($_SESSION['username']) && stripos($_SESSION['username'],'Guest') !== false){echo "(You need a House account to use this feature.)";} ?>
                     </div>
                 </a>
         
-                <a href="https://chat.house-778.theorangecow.org/" class="card" id="p9">
+                <a href="https://chat.house-778.theorangecow.org/" class="card" id="p12">
                     <div class="card-title">Chat</div>
                     <div class="card-desc">An online chat system you can embed into applications. 
                     <?php if(isset($_SESSION['username']) && stripos($_SESSION['username'],'Guest') !== false){echo "(You need a House account to use this feature.)";} ?>
                     </div>
                 </a>
         
-                <a href="https://encrypt.house-778.theorangecow.org" class="card" id="p10">
+                <a href="https://encrypt.house-778.theorangecow.org" class="card" id="p13">
                     <div class="card-title">Encrypt</div>
                     <div class="card-desc">Encrypt words and images, and hide messages inside pictures.</div>
                 </a>
         
             </div>
         
-            <div class="section" id="p13">
+            <div class="section" id="p14">
                 <p>Get excited</p>
                 <h2>Upcoming projects</h2>
                 <li>
@@ -194,7 +207,7 @@ include "base/main.php";
             window.onload = function() {
                 let index = 1;
                 function showNext() {
-                    if (index <= 13) {
+                    if (index <= 14) {
                         //if (welcome) {
                             var welcome = document.getElementById("p" + index.toString());
                             if (welcome.classList.contains('card')) {
