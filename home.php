@@ -78,6 +78,9 @@ include "base/main.php";
                 color: #555;
                 font-size: 15px;
             }
+            .break {
+                grid-column: 1 / -1;
+            }
         </style>
     </head>
     <body>
@@ -141,7 +144,7 @@ include "base/main.php";
                     <div class="card-title">Account</div>
                     <div class="card-desc">A site were you can change your account settings.</div>
                 </a>
-                <br>
+                <div class="break"></div>
                 <a href="https://bluffball.house-778.theorangecow.org" class="card" id="p7">
                     <div class="card-title">Bluffball</div>
                     <div class="card-desc">A site made for nerds needing the latest football data, with tools to link it into conversations.</div>
