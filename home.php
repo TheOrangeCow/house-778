@@ -40,7 +40,8 @@ include "base/main.php";
         <style>
             .grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+                justify-content: center;   /* centers the whole grid */
                 gap: 30px;
                 transition: opacity 0.8s ease;
             }
@@ -61,6 +62,7 @@ include "base/main.php";
                 text-decoration: none;
                 color: inherit;
                 opacity: 0;
+                text-align: center;
             }
             
             .card:hover {
