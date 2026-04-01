@@ -12,4 +12,4 @@ This is a colection of php projects made by <a href="https://github.com/TheOrang
 - Wordle - A site were you can get the wordle answers
 - Libary - A casino were you can play pooheads and blackjack
 - Chat - A online chat
-- Encript - Varas way of incpting stuff
+- Encript - Varas way of encpting stuff
