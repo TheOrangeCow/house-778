@@ -10,6 +10,6 @@ This is a colection of php projects made by <a href="https://github.com/TheOrang
 - <a href="https://github.com/TheOrangeCow/house-778-w4-schools">W4-schools</a> - A clon of W3 schools
 - <a href="https://github.com/TheOrangeCow/house-778-bluffball">Bluffball</a> - A clon of the site in the itcrowd to give nerds foot ball qutes
 - <a href="https://github.com/TheOrangeCow/house-778-wordle">Wordle</a> - A site were you can get the wordle answers
-- <a href="https://github.com/TheOrangeCow/house-778-libary">Libary<a/> - A casino were you can play pooheads and blackjack
+- <a href="https://github.com/TheOrangeCow/house-778-library">Library<a/> - A casino were you can play pooheads and blackjack
 - <a href="https://github.com/TheOrangeCow/house-778-chat">Chat</a> - An online chat
 - <a href="https://github.com/TheOrangeCow/house-778-encrypt">Encrypt</a> - different way of encrypting stuff
