@@ -2,7 +2,7 @@
 This is a colection of php projects made by <a href="https://github.com/TheOrangeCow/">TheOrangeCow</a>
 
 ### Index
-- Home (This repo)
+- <a href="https://github.com/TheOrangeCow/house-778">Home</a> (This repo)
 - Auth - login and account settings
 - Theme - Where you can change your background
 - Profile - Where you can link with outher house users
