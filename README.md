@@ -3,7 +3,7 @@ This is a colection of php projects made by <a href="https://github.com/TheOrang
 
 ### Index
 - <a href="https://github.com/TheOrangeCow/house-778">Home</a> (This repo)
-- Auth - login and account settings
+- <a href="https://github.com/TheOrangeCow/house-778-auth">Auth</a> - login and account settings
 - Theme - Where you can change your background
 - Profile - Where you can link with outher house users
 - House-stack - A clon of stack overflow
