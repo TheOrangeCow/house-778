@@ -105,8 +105,9 @@ include "base/main.php";
         
             <div class="section" id="p2">
                 <h2>About</h2>
-                <p>Hi, I am TheOrangeCow. This website is where i host my php projects. 
+                <p>Hi, I am TheOrangeCow. This website is where I host my php projects. 
                 <a href="https://github.com/TheOrangeCow">My GitHub account</a></p>
+                <a href="https://theorangecow.org">My Main Website</a></p>
         
                 <h3>Tic-Tac-Toe with Unbeatable AI</h3>
                 <div class="status">
