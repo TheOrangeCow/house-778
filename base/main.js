@@ -27,7 +27,7 @@ console.log(`
 ▌▌▙▌▙▌▄▌▙▖   ▌ ▌▙▌
                   
 
-Hay develipar check out my github https://github.com/theorangecow
+Hay developer check out my github https://github.com/theorangecow or check out the source code https://github.com/theorangecow/house-778
 `);
 
 
