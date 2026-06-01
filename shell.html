@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shell</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #111; overflow: hidden; }
+
+    #game-frame {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+    }
+
+    #focus-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-family: sans-serif;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    #focus-overlay h1 { font-size: 2rem; }
+    #focus-overlay p  { opacity: 0.7; font-size: 1rem; }
+    #focus-overlay button {
+      margin-top: 8px;
+      padding: 12px 32px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: none;
+      background: #e8c040;
+      color: #111;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="focus-overlay" onclick="startGame()">
+  <h1>Shell</h1>
+  <p>Click to start</p>
+  <button>Play</button>
+</div>
+
+<iframe
+  id="game-frame"
+  src="https://shellshock.io"
+  allow="pointer-lock; fullscreen"
+  allowfullscreen
+></iframe>
+
+<script>
+  const overlay = document.getElementById('focus-overlay');
+  const frame   = document.getElementById('game-frame');
+
+  function startGame() {
+    overlay.style.display = 'none';
+
+    frame.focus();
+
+    document.addEventListener('click', () => frame.focus());
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      overlay.style.display = 'flex';
+    }
+  });
+</script>
+
+</body>
+</html>
