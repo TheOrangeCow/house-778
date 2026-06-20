@@ -1,9 +1,23 @@
 <?php 
-session_set_cookie_params(0, '/', 'house-778.org');
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'domain' => '.theorangecow.org', 
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Lax'
+]);
 session_start();
 
 if (!isset($_SESSION["user_id"])) {
-    session_set_cookie_params(0, '/', 'house-778.org');
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'domain' => '.theorangecow.org', 
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'Lax'
+    ]);
     session_start();
     define('BASE_PATH', __DIR__ . '/../');
     function generateUsername() {
