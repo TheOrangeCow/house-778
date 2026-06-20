@@ -10,7 +10,7 @@ session_set_cookie_params([
 session_start();
 
 if (!isset($_SESSION["user_id"])) {
-    header("Location: https://house-778.theorangecow.org/home.php");
+    header("Location: https://auth.house-778.theorangecow.org/home.php");
     exit;
 }
 ?>
