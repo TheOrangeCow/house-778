@@ -9,27 +9,7 @@ session_set_cookie_params([
 ]);
 session_start();
 
-if (!isset($_SESSION["user_id"])) {
-    session_set_cookie_params([
-        'lifetime' => 0,
-        'path' => '/',
-        'domain' => '.theorangecow.org', 
-        'secure' => true,
-        'httponly' => true,
-        'samesite' => 'Lax'
-    ]);
-    session_start();
-    define('BASE_PATH', __DIR__ . '/../');
-    function generateUsername() {
-        $randomNumber = rand(1000, 9999);
-        return "Guest" . $randomNumber;
-    }
-    
-    $username = generateUsername();
-    $_SESSION["username"] = $username;
-    $_SESSION['user_id'] = 1;
-}
-include "base/main.php";
+include "base/chech.php";
 ?>
 
 <!DOCTYPE html>
