@@ -9,7 +9,7 @@ $messages = [
     404 => "Page Not Found",
     500 => "Internal Server Error",
     503 => "Service Unavailable",
-    418 => "You need a house account or I'm a teapot."
+    418 => "You need a house account or I'm a teapot.",
     502 => "Server is currently down."
 ];
 
