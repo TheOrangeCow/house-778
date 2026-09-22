@@ -10,6 +10,7 @@ $messages = [
     500 => "Internal Server Error",
     503 => "Service Unavailable",
     418 => "You need a house account or I'm a teapot."
+    502 => "Server is currently down."
 ];
 
 $message = $messages[$code] ?? "Something went wrong";
